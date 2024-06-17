@@ -1,0 +1,49 @@
+! font settings --------------------------------------------------------------
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 144
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+Xcursor.theme: Capitaine Cursors (Gruvbox)
+Xcursor.size: 48
+! urxvt -------------------------------------------
+
+! "monospace" is an alias defined in ~/.config/fontconfig/fonts.conf
+URxvt.font: xft:monospace:size=10
+URxvt.boldFont: xft:monospace:bold:size=10
+! Add fallback fonts as laid out in `man 1 urxvt` under "font:" in the RESOURCES section
+
+URxvt.letterSpace: -1
+!URxvt.lineSpace: 1
+! The letterSpace and lineSpace settings are highly dependent on the font(s) configured above
+! and should be changed or removed as necessary.
+
+! Window size and position
+!URxvt*geometry: 60x22+50+100
+! Window size, let the Window Manager position it
+URxvt.geometry: 80x24
+
+URxvt.scrollstyle: plain
+URxvt.scrollBar: true
+URxvt.scrollBar_right: true
+URxvt.iconFile: /usr/share/icons/Numix-Circle/48/apps/terminal.svg
+
+URxvt.fading: 20
+
+
+! scrollback buffer lines - 65535 is max (64 is default)
+URxvt.saveLines: 5000
+
+! True Transparency, opacity percentage set in square brackets before URxvt.background colour
+URxvt.depth: 32
+
+! Clickble URLs
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/x-www-browser
+URxvt.matcher.button: 3
+
+
